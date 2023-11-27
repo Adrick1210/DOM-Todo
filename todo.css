@@ -1,40 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(100deg, #45bcbd, #fd1d1d, #fcb045);
-    padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(115deg, #45bcbd, #fd1d1d, #fcb045);
+  padding: 10px;
 }
 
 .todo-app {
-  background: white;
+  background-color: white;
   width: 100%;
   max-width: 540px;
-  padding: 40px 30px 70px;
   margin: 100px auto 20px;
+  padding: 40px 30px 70px;
   border-radius: 15px;
 }
 
 .todo-app h1 {
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-left: 134px;
+  color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 140px;
 }
 
-.todo-app h1 img{
-    width: 50px;
-    margin-left: 2px;
-    margin-right: 2px;
+.todo-app h1 img {
+  width: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .control {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background: lightgray;
+  border-radius: 50px;
+  padding-left: 15px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 15px;
+  font-weight: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #c11f1f;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  margin-top: 15px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 10%;
+  background-image: url("images/uncheck.png");
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked::before {
+  background-image: url("images/checked.png");
 }
