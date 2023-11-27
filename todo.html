@@ -4,23 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="todo.css" />
+    <script src="todo.js" defer></script>
     <title>Todo List App</title>
   </head>
   <body>
     <div class="container">
       <div class="todo-app">
-        <h1>
-          Todo <img src="images/todo.png" alt="todo-icon" /> List
-        </h1>
+        <h1>Todo <img src="images/todo.png" alt="todo-icon" /> List</h1>
         <div class="control">
           <input id="new-todo" type="text" placeholder="Enter a Todo" />
-          <button id="add-todo">Add</button>
+          <button id="add-todo" onclick="addTodo()">Add</button>
         </div>
-        <ul id="list">
-          <li class="checked">todo 1</li>
-          <li>todo 2</li>
-          <li>todo 3</li>
-        </ul>
+        <ul id="list"></ul>
       </div>
     </div>
   </body>
