@@ -11,15 +11,30 @@
 }
 
 .todo-app {
-  background: #dfe3e3;
-  border-radius: 15px;
-  padding: 40px 30px 70px;
-  margin-top: 50px;
+  background: white;
   width: 100%;
   max-width: 540px;
+  padding: 40px 30px 70px;
   margin: 100px auto 20px;
+  border-radius: 15px;
+}
+
+.todo-app h1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 140px;
 }
 
 .todo-app h1 img{
-    width: 40px
+    width: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
